@@ -25,9 +25,25 @@ Proxy Group:
       - AUTO
       - SELECT
       - DIRECT
+  - name: WARP
+    type: select
+    proxies:
+      - WARP
+  - name: SSH
+    type: select
+    proxies:
+      - WARP
+      - HK
+      - TW
+      - SG
+      - JP
+      - US
+      - AUTO
+      - SELECT
+      - DIRECT
 
 Rule:
-  - DST-PORT,22,WARP
+  - DST-PORT,22,SSH
 
 tunnels:
   # one line config
