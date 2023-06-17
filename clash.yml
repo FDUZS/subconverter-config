@@ -25,14 +25,14 @@ Proxy Group:
       - AUTO
       - SELECT
       - DIRECT
-  - name: WARP
+  - name: TUNNEL
     type: select
     proxies:
       - WARP
   - name: SSH
     type: select
     proxies:
-      - WARP
+      - TUNNEL
       - HK
       - TW
       - SG
